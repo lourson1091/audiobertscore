@@ -35,7 +35,7 @@ subjective evaluation values than conventional metrics.
 ---
 
 ## Install
-NOTE: Our implementation was developed using PyTorch 1.13.1 with CUDA 11.6 support.
+NOTE: Our implementation was developed using Python3.8.18, PyTorch 1.13.1 with CUDA 11.6 support.
 
 To use `audiobertscore`, run the following:
 
