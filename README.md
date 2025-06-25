@@ -5,7 +5,16 @@
 
 
 ---
+### Similarity based metric
+![Metric](./metric.png)
+![p-norm](./p-calc.png)
+- r: Embeddings of reference audio.
+- s: Embeddings of synthesized audio.
+- M_ij: Each element of the similarity matrix represents the cosine similarity between two embedding vectors.
 
+### Formula
+![Formula](./formula.png)
+---
 Abstract:
 
 We propose a novel objective evaluation metric for synthesized
@@ -59,8 +68,41 @@ Please download the pretrained weight files for AST, ATSTFrame, and BYOL-A from 
 
 ---
 ## Usage
+### Parameter description
+- sr: Sampling rate used internally for feature extraction. Input waveforms will be resampled to this rate if needed. (default: 16000)
 
+- model_type: Specifies which model to use for feature extraction. 
 
+    Choose from:
+
+    - <code>"ast"</code>: AST
+
+    - <code>"atstframe"</code>: ATSTFrame
+
+    - <code>"byola_v2"</code>: BYOL-A v2
+
+- layer: Transformer layer index (1–13) to extract embeddings from.     Used only for "ast" and "atstframe".
+
+- byola_mode(used only when model_type="byola_v2"): Output mode for BYOL-A embeddings. 
+
+    Options:
+
+    - <code>"local"</code>: Local (framewise) embeddings
+
+    - <code>"global"</code>: Global summary embedding
+
+    - <code>"concat"</code>: Concatenated local and global
+
+- lam: Weighting factor λ in the AudioBERTScore formula to balance precision/recall terms. (e.g., -3.5)
+
+- p: The exponent parameter used in the second term of the AudioBERTScore formula. (e.g., 106.0)
+
+    When p approaches infinity, the p-norm becomes equivalent to the max operation.
+
+- use_gpu: If True, runs on GPU if available. If False, forces CPU execution.
+
+### Example of Usage
+Please use <code>test.py</code>.
 
 ```python
 import numpy as np
