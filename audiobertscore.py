@@ -84,7 +84,7 @@ class AudioBERTScore:
         self.p = p
         self.sr = sr
 
-        # ---------- エラーチェック追加 ----------
+        # ---------- Error checking ----------
         if model_type in ("ast", "atstframe"):
             if not (1 <= layer <= 13):
                 raise ValueError(f"Invalid layer={layer}. Must be between 1 and 13 for model_type='{model_type}'.")
