@@ -42,6 +42,8 @@ To use `audiobertscore`, run the following:
 ```bash
 git clone https://github.com/lourson1091/audiobertscore.git
 
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1+cu116 -f https://download.pytorch.org/whl/torch_stable.html
+
 pip install -r requirements.txt
 ```
  ### Pretrained weight files
