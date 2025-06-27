@@ -108,7 +108,7 @@ Please download the pretrained weight files for AST, ATSTFrame, and BYOL-A from 
 - use_gpu: If True, runs on GPU if available. If False, forces CPU execution.
 
 ### Example of Usage
-Please use <code>test.py</code>.The following initial values yield the best performance.
+Please use <code>test.py</code>. The following initial values yield the best performance.
 
 ```python
 import numpy as np
