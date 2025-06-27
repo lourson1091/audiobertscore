@@ -54,6 +54,10 @@ Please download the pretrained weight files for AST, ATSTFrame, and BYOL-A from 
     Download from:
     https://github.com/YuanGongND/ast?tab=readme-ov-file#pretrained-models
 
+    please download following:
+
+    <code>Full AudioSet, 10 tstride, 10 fstride, with Weight Averaging (0.459 mAP)</code>
+
 - ATST-Frame:<code>atstframe_base.ckpt</code>
 
     Download from:
@@ -104,7 +108,7 @@ Please download the pretrained weight files for AST, ATSTFrame, and BYOL-A from 
 - use_gpu: If True, runs on GPU if available. If False, forces CPU execution.
 
 ### Example of Usage
-Please use <code>test.py</code>.
+Please use <code>test.py</code>.The following initial values yield the best performance.
 
 ```python
 import numpy as np
