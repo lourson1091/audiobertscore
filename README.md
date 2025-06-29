@@ -3,34 +3,10 @@
 
 ![Overview](./overview.png)
 
-
----
-### Similarity based metric
-![Metric](./metric.png)
-![p-norm](./p-calc.png)
-- r: Embeddings of reference audio.
-- s: Embeddings of synthesized audio.
-- M_ij: Each element of the similarity matrix represents the cosine similarity between two embedding vectors.
-
-### Formula
-![Formula](./formula.png)
 ---
 Abstract:
 
-We propose a novel objective evaluation metric for synthesized
-audio in text-to-audio (TTA), aiming to improve the performance
-of TTA models. In TTA, subjective evaluation of the synthesized
-sound is an important, but its implementation requires monetary
-costs. Therefore, objective evaluation such as mel-cepstral distor-
-tion are used, but the correlation between these objective metrics
-and subjective evaluation values is weak. Our proposed objective
-evaluation metric, AudioBERTScore, calculates the similarity be-
-tween embedding of the synthesized and reference sounds. The
-method is based not only on the max-norm used in conventional
-BERTScore but also on the p-norm to reflect the non-local nature
-of environmental sounds. Experimental results show that scores
-obtained by the proposed method have a higher correlation with
-subjective evaluation values than conventional metrics.
+We propose AudioBERTScore, a novel objective evaluation metric designed for text-to-audio (TTA) generation. Unlike traditional metrics such as mel-cepstral distortion (MCD), which show limited correlation with human perception, AudioBERTScore estimates the perceptual similarity between synthesized and reference audio by comparing their embedding sequences obtained from pretrained audio foundation models. Inspired by BERTScore from NLP, our method computes similarity using both max-norm and a generalized p-norm formulation, effectively capturing the non-local characteristics of environmental sounds. Through extensive experiments, we demonstrate that AudioBERTScore achieves significantly higher correlation with subjective evaluation scores—such as overall quality (OVL) and text relevance (REL)—compared to conventional objective metrics. This approach enables robust, reference-based evaluation without supervised training, offering a practical and semantically-aware alternative for assessing the quality of TTA outputs.
 
 ---
 
@@ -135,7 +111,7 @@ global_p, global_r, global_f1 = scores[0]
 
 ## Citation
 ```tex
-
+(TBA)
 ```
 
 ## Contributors
