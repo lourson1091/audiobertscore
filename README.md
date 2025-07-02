@@ -1,5 +1,5 @@
 # AudioBERTScore
-**AudioBERTScore: Objective Evaluation of Environmental Sound Synthesis Based on Similarity of Audio Embedding Sequences**  [[Paper]](https://)
+**AudioBERTScore: Objective Evaluation of Environmental Sound Synthesis Based on Similarity of Audio Embedding Sequences**  [[Paper]](https://arxiv.org/abs/2507.00475)
 
 ![Overview](./overview.png)
 
