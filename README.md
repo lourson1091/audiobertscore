@@ -109,6 +109,21 @@ scores = scorer.score(ref_wav, 16000, gen_wav, 16000)
 global_p, global_r, global_f1 = scores[0]
 ```
 
+## Dataset: Clotho OVL-REL Test Set
+
+### **wave_all_16k**
+This folder contains 100 synthesized audio samples × 4 models and 100 original samples taken from the Clotho dataset.  
+The samples labeled as **"real"** are those taken directly from the original Clotho dataset.
+
+### **clotho_ovl_rel_test_set.csv**
+
+- **`File Name`**: The name of the audio file.  
+- **`Model`**: The name of the synthesis model used to generate the sample.  
+  Samples labeled as **"real"** are those taken directly from the Clotho dataset.  
+- **`Text`**: The text used as input for generating the synthesized audio.  
+- **`OVL`**: The MOS (Mean Opinion Score) rating for *Overall Quality*.  
+- **`REL`**: The MOS rating for *Relevance* between the text and the corresponding audio.
+
 ## Citation
 ```tex
 @inproceedings{Kishi2026AudioBERTScore,
