@@ -111,7 +111,14 @@ global_p, global_r, global_f1 = scores[0]
 
 ## Citation
 ```tex
-(TBA)
+@inproceedings{Kishi2026AudioBERTScore,
+  author    = {Minoru Kishi and Ryosuke Sakai and Shinnosuke Takamichi and Yusuke Kanamori and Yuki Okamoto},
+  title     = {AudioBERTScore: Objective Evaluation of Environmental Sound Synthesis Based on Similarity of Audio Embedding Sequences},
+  booktitle = {Proceedings of the Workshop on Audio-Centric AI: Towards Real-World Multimodal Reasoning and Application Use Cases (Audio-AAAI) at AAAI-26},
+  year      = {2026},
+  address   = {Singapore},
+  publisher = {AAAI Press}
+}
 ```
 
 ## Contributors
